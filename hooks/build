@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo MONGODB_URI $MONGODB_URI
+echo FIREBASE_VIEW $FIREBASE_VIEW
+echo "docker build --build-arg MONGODB_URI=$MONGODB_URI --build-arg FIREBASE_VIEW=$FIREBASE_VIEW -f $DOCKERFILE_PATH -t $IMAGE_NAME ."
+
+docker build \
+    --build-arg DB_URI_DEV="$DB_URI_DEV" \
+    --build-arg DB_URI_MAIN="$DB_URI_MAIN" \
+    --build-arg DB_URI_PRODUCTION="$DB_URI_PRODUCTION" \
+    --build-arg DB_URI_STAGING="$DB_URI_STAGING" \
+    --build-arg DB_URI_DEMO="$DB_URI_DEMO" \
+    --build-arg FIREBASE_VIEW="$FIREBASE_VIEW" \
+    -f $DOCKERFILE_PATH \
+    -t $IMAGE_NAME .
