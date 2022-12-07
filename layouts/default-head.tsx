@@ -8,19 +8,13 @@ export function DefaultHead({ fontSize, ...props }: { fontSize?: string }) {
           name="viewport"
           content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=0"
         />
-        <meta name="description" content="Green MRL Tra cứu thông tin nông nghiệp" />
-        <link
-          rel="icon"
-          type="image/png"
-          href={
-            "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://peppervietnam.com/&size=128"
-          }
-        />
+        <meta name="description" content="Green Check Giải pháp truy xuất nguồn gốc nông nghiệp - Nông nghiệp xanh - Sống an lành" />
+        <link rel='icon' type='image/x-icon' href='/favicon/favicon.ico?v=2' />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&family=Montserrat:wght@400;600;700&family=Saira:wght@400;500;600;700;800&display=swap'
+          rel='stylesheet'
         />
         {/* <link rel="manifest" crossOrigin="use-credentials" href="/manifest.json" /> */}
         <link rel="stylesheet" href={`/api/setting/theme/${"DEFAULT"}`}></link>

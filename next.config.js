@@ -15,11 +15,14 @@ module.exports = withPlugins(
   ],
   {
     publicRuntimeConfig: {
-      firebaseView: process.env.FIREBASE_VIEW,
       version: process.env.npm_package_version,
-      pathUri: process.env.DB_URI,
-      apiKey: process.env.NEXT_PUBLIC_API_KEY,
+      url_google_play: process.env.URL_GOOGLE_PLAY,
+      url_app_store: process.env.URL_APP_STORE,
+      domain: process.env.DOMAIN,
     },
     swcMinify: true,
+    images: {
+      unoptimized: true,
+    },
   },
 );

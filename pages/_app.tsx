@@ -1,47 +1,31 @@
 import "../style/style.scss";
 
-import { appWithTranslation } from "next-i18next";
+import App, { AppContext,AppProps } from 'next/app';
 import { DefaultSeo, NextSeo } from "next-seo";
-import { Fragment, useEffect } from "react";
+import Layout from "../layouts/Layout";
 import { AlertProvider } from "../lib/providers/alert-provider";
 import { ToastProvider } from "../lib/providers/toast-provider";
 import { TooltipProvider } from "../lib/providers/tooltip-provider";
-import nextI18nextConfig from "../next-i18next.config";
 
-function App({ Component, pageProps }: any) {
-  const Layout = Component.Layout ? Component.Layout : Fragment;
-  const layoutProps = Component.LayoutProps ? Component.LayoutProps : {};
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (pageProps?.analyticConfig) {
-        sessionStorage.setItem("analyticConfig", JSON.stringify(pageProps.analyticConfig));
-      } else {
-        sessionStorage.removeItem("analyticConfig");
-      }
-    }
-  }, [pageProps.analyticConfig]);
-
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
         titleTemplate="%s"
-        defaultTitle="Green MRL Console"
+        defaultTitle="Green Check - Giải pháp truy xuất nguồn gốc nông nghiệp"
         openGraph={{
           type: "website",
           locale: "vi_VN",
-          site_name: "Green MRL",
+          site_name: "Green Check",
         }}
       />
       {pageProps.seo && <NextSeo {...pageProps.seo} />}
       <TooltipProvider>
         <ToastProvider>
           <AlertProvider>
-            {/* <AuthProvider> */}
-            <Layout {...layoutProps}>
+            <Layout >
               <Component {...pageProps} />
             </Layout>
-            {/* </AuthProvider> */}
           </AlertProvider>
         </ToastProvider>
       </TooltipProvider>
@@ -49,4 +33,11 @@ function App({ Component, pageProps }: any) {
   );
 }
 
-export default appWithTranslation(App, nextI18nextConfig);
+MyApp.getInitialProps = async (context: AppContext) => {
+  const ctx = await App.getInitialProps(context);
+
+  return { ...ctx };
+};
+
+export default MyApp;
+

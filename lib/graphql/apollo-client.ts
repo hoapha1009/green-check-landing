@@ -9,11 +9,19 @@ import { ErrorLink } from "./error.link";
 import { WSLink } from "./graphql-ws.link";
 
 const { publicRuntimeConfig } = getConfig();
+console.log("🚀 ~ file: apollo-client.ts:12 ~ publicRuntimeConfig", publicRuntimeConfig);
 let apolloClient: ApolloClient<NormalizedCacheObject>;
-let URI = publicRuntimeConfig.pathUri;
+const domain = publicRuntimeConfig.domain;
+const version = publicRuntimeConfig.version;
+console.log("🚀 ~ file: apollo-client.ts:20 ~ version 1", version);
+let uri = "";
+if (domain) {
+  const newUrl = new URL(domain);
+  uri = `${newUrl?.protocol}//api.${newUrl?.hostname}/graphql`;
+}
+console.log("🚀 ~ file: apollo-client.ts:20 ~ uri", uri);
 
 function createApolloClient() {
-  console.log("init apollo client::::" + URI);
   return new ApolloClient({
     ssrMode: typeof window === "undefined", // set to true for SSR
     link: ApolloLink.from([
@@ -27,7 +35,7 @@ function createApolloClient() {
           );
         },
         WSLink as any,
-        new HttpLink({ uri: `${URI}/graphql` }) as any
+        new HttpLink({ uri }) as any
       ),
     ]) as any,
     cache: new InMemoryCache(),
