@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer data-aos='fade-up'>
-      <div className='py-5 bg-white lg:bg-neutral-50 lg:pt-16 lg:pb-20'>
+      <div className='py-5 bg-white lg:bg-gray-500-50 lg:pt-16 lg:pb-20'>
         <div className='flex flex-col justify-between gap-6 main-container lg:flex-row'>
           <div className='flex flex-col items-center justify-center lg:items-start'>
             <div className='relative h-[3rem] w-[15.25rem] lg:h-[4.5rem] lg:w-[22rem]'>
@@ -143,14 +143,14 @@ export default function Footer() {
             ))}
           </div>
           <div className='hidden mt-5 lg:block'>
-            <div className='flex justify-between text-neutral-100'>
+            <div className='flex justify-between text-gray-500-100'>
               <div className=''>
                 Copyright © 2022 GreenAgri Software. All rights reserved.
               </div>
               <div className='flex'>
                 <Link href='/'>
                   <a className='transition ease-in-out pointer-events-none hover:text-secondary hover:underline'>
-                    <div className='pr-3 border-r border-neutral-100'>
+                    <div className='pr-3 border-r border-gray-500-100'>
                       Quy định sử dụng
                     </div>
                   </a>

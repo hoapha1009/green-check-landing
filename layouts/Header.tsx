@@ -49,7 +49,7 @@ export default function Header() {
       <header
         className={`sticky top-0 z-400  w-full bg-white ${
           isScrolled
-            ? 'border-b border-neutral-50 shadow'
+            ? 'border-b border-gray-500-50 shadow'
             : 'border-transparent shadow-none'
         }`}
       >
@@ -72,7 +72,7 @@ export default function Header() {
             {screenLg && <MenuLink indexOfSelectedMenu={indexOfSelectedMenu} />}
             <i
               className={`px-2.5 text-2xl lg:hidden ${
-                showMenuMobile ? '!text-primary' : '!text-neutral-700'
+                showMenuMobile ? '!text-primary' : '!text-gray-500-700'
               }`}
               onClick={() => setShowMenuMobile(!showMenuMobile)}
             >

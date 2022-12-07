@@ -32,7 +32,7 @@ export function HomeIntroduce() {
         </div>
         <div className='flex-1'>
           <Title text='Giới thiệu' className='!text-left' />
-          <div className='py-4 leading-relaxed text-neutral-700 lg:py-8 lg:text-xl'>
+          <div className='py-4 leading-relaxed text-gray-500-700 lg:py-8 lg:text-xl'>
             Green Check là giải pháp truy xuất nguồn gốc giúp theo dõi thông tin
             hoạt động trên từng công đoạn trong quá trình sản xuất, thu mua, chế
             biến và phân phối của một đơn vị sản phẩm trước khi đến tay người
@@ -44,7 +44,7 @@ export function HomeIntroduce() {
                 <i className='text-2xl text-primary'>
                   <RiCheckboxCircleLine />
                 </i>
-                <div className='text-neutral-700 lg:text-xl'>{item}</div>
+                <div className='text-gray-500-700 lg:text-xl'>{item}</div>
               </div>
             ))}
           </div>

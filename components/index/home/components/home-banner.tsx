@@ -27,7 +27,7 @@ export function HomeBanner() {
             Giải pháp thuộc hệ sinh thái ứng dụng <br /> QR Code - Green Check
           </div>
           <div className='flex items-center gap-1 pt-1 pb-1 lg:gap-4 lg:pt-4'>
-            <div className='font-medium text-neutral-400 hover:text-white'>
+            <div className='font-medium text-gray-500-400 hover:text-white'>
               <Link href={publicRuntimeConfig?.url_google_play || '/'}>
                 <a
                   target='_blank'
@@ -43,7 +43,7 @@ export function HomeBanner() {
                 </a>
               </Link>
             </div>
-            <div className='font-medium text-neutral-400 hover:text-white'>
+            <div className='font-medium text-gray-500-400 hover:text-white'>
               <Link href={publicRuntimeConfig?.url_app_store || '/'}>
                 <a
                   target='_blank'

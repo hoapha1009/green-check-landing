@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   // Put Header or Footer Here
   return (
-    <div className='relative min-h-screen bg-[#FAFBFB] text-neutral-700 lg:bg-white'>
+    <div className='relative min-h-screen bg-[#FAFBFB] text-gray-500-700 lg:bg-white'>
       <>
         <DefaultHead />
         <Header />

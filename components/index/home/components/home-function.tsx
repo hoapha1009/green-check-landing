@@ -43,7 +43,7 @@ export function HomeFunction() {
   return (
     <div
       data-aos='fade-up'
-      className='py-5 bg-neutral-50 lg:bg-white lg:pt-16 lg:pb-20'
+      className='py-5 bg-gray-500-50 lg:bg-white lg:pt-16 lg:pb-20'
     >
       <Title text='Chức năng của Green Check' />
       <div className='flex flex-col justify-between gap-4 mt-5 main-container lg:mt-12 lg:flex-row 2xl:gap-8'>
@@ -52,7 +52,7 @@ export function HomeFunction() {
             key={index}
             data-aos='fade-up'
             data-aos-delay={((index + 1) * 400).toString()}
-            className='delay-400 group flex flex-1 flex-row items-center gap-2 rounded-lg border border-neutral-50 bg-white p-2.5 pb-6 shadow-lg transition-all hover:bg-primary-50 lg:block lg:text-center'
+            className='delay-400 group flex flex-1 flex-row items-center gap-2 rounded-lg border border-gray-500-50 bg-white p-2.5 pb-6 shadow-lg transition-all hover:bg-primary-50 lg:block lg:text-center'
           >
             <div className='relative'>
               <div className='relative h-[7.5rem] w-[7.5rem] overflow-hidden rounded lg:h-[14rem] lg:w-full 2xl:h-[16rem]'>
@@ -61,7 +61,7 @@ export function HomeFunction() {
                   src={item.img}
                   layout='fill'
                   objectFit='cover'
-                  className='transition-all ease-in-out border rounded delay-400 border-neutral-50 group-hover:scale-105 group-hover:rounded'
+                  className='transition-all ease-in-out border rounded delay-400 border-gray-500-50 group-hover:scale-105 group-hover:rounded'
                 />
               </div>
               <div className='hidden lg:block'>

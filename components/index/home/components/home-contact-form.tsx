@@ -99,7 +99,7 @@ export function HomeContactForm() {
         </div>
         <form
           name='google-sheet'
-          className='flex w-full flex-col gap-4 rounded-lg border border-neutral-50 bg-white p-8 shadow-sm lg:bg-[#FAFBFB]'
+          className='flex w-full flex-col gap-4 rounded-lg border border-gray-500-50 bg-white p-8 shadow-sm lg:bg-[#FAFBFB]'
           onSubmit={handleSubmit}
         >
           <div className=''>

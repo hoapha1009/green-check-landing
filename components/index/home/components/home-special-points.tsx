@@ -45,7 +45,7 @@ export function HomeSpecialPoints() {
             key={index}
             data-aos='fade-up'
             data-aos-delay={((index + 1) * 400).toString()}
-            className='flex-1 p-10 text-center transition-all ease-in-out delay-200 bg-white border rounded-sm shadow-md group border-neutral-50 hover:-translate-y-1 hover:bg-primary-50 lg:p-7'
+            className='flex-1 p-10 text-center transition-all ease-in-out delay-200 bg-white border rounded-sm shadow-md group border-gray-500-50 hover:-translate-y-1 hover:bg-primary-50 lg:p-7'
           >
             <div className='relative h-[3.5rem] lg:h-[3.875rem]'>
               <Image
@@ -55,8 +55,8 @@ export function HomeSpecialPoints() {
                 objectFit='contain'
               />
             </div>
-            <div className='mt-4 text-neutral-600 lg:text-lg'>{item.title}</div>
-            <div className='mt-1 font-bold uppercase whitespace-pre-wrap text-neutral-700 lg:text-lg'>
+            <div className='mt-4 text-gray-500-600 lg:text-lg'>{item.title}</div>
+            <div className='mt-1 font-bold uppercase whitespace-pre-wrap text-gray-500-700 lg:text-lg'>
               {item.content}
             </div>
           </div>

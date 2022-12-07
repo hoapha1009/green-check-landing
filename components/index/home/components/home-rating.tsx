@@ -60,7 +60,7 @@ export function HomeRating() {
                 className='group flex flex-1 flex-col items-center gap-3 rounded-lg bg-white px-6 py-[1.75rem]
               text-center hover:bg-primary-50'
               >
-                <div className='relative w-48 h-48 overflow-hidden transition ease-in-out border rounded-full delay-400 border-neutral-50 group-hover:scale-105'>
+                <div className='relative w-48 h-48 overflow-hidden transition ease-in-out border rounded-full delay-400 border-gray-500-50 group-hover:scale-105'>
                   <Image
                     alt={item.job + " " +item.name}
                     src={item.img}
@@ -72,7 +72,7 @@ export function HomeRating() {
                   {item.job}
                 </div>
                 <div className='text-xl font-bold'>{item.name}</div>
-                <div className='font-medium text-neutral-400'>
+                <div className='font-medium text-gray-500-400'>
                   {item.comment}
                 </div>
               </div>
@@ -99,13 +99,13 @@ export function HomeRating() {
               {LIST.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className='self-stretch p-5 overflow-hidden bg-white border rounded-lg shadow border-neutral-50'
+                  className='self-stretch p-5 overflow-hidden bg-white border rounded-lg shadow border-gray-500-50'
                 >
                   <div
                     key={index}
                     className='flex flex-col items-center flex-1 gap-3 text-center bg-white rounded-lg group hover:bg-primary-50'
                   >
-                    <div className='relative w-48 h-48 overflow-hidden transition ease-in-out border rounded-full delay-400 border-neutral-50 group-hover:scale-105'>
+                    <div className='relative w-48 h-48 overflow-hidden transition ease-in-out border rounded-full delay-400 border-gray-500-50 group-hover:scale-105'>
                       <Image
                         alt={item.job}
                         src={item.img}
@@ -117,7 +117,7 @@ export function HomeRating() {
                       {item.job}
                     </div>
                     <div className='text-xl font-bold'>{item.name}</div>
-                    <div className='font-medium text-neutral-400'>
+                    <div className='font-medium text-gray-500-400'>
                       {item.comment}
                     </div>
                   </div>

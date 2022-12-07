@@ -38,7 +38,7 @@ export function LogoSlider({ type = 'partner', ...props }: Props) {
       //   clickable: true,
 
       //   bulletClass:
-      //     'inline-block w-3 h-3 bg-neutral-400 rounded-full transition-all cursor-pointer mr-2 last:mr-0 hover:bg-primary transform translate-y-3',
+      //     'inline-block w-3 h-3 bg-gray-500-400 rounded-full transition-all cursor-pointer mr-2 last:mr-0 hover:bg-primary transform translate-y-3',
       // }}
     >
       {screenLg && type === 'partner' && (

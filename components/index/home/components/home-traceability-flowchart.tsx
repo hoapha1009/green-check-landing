@@ -34,7 +34,7 @@ export function HomeTraceabilityFlowchart() {
           {STAGE_LIST.map((item, index) => (
             <SwiperSlide
               key={index}
-              className='self-stretch p-4 overflow-hidden bg-white border rounded-lg shadow border-neutral-50'
+              className='self-stretch p-4 overflow-hidden bg-white border rounded-lg shadow border-gray-500-50'
             >
               <div className='relative h-[11rem]'>
                 <Image
@@ -114,7 +114,7 @@ export function HomeTraceabilityFlowchart() {
                       className={`text-lg font-semibold ${
                         stage.value <= selectedStage
                           ? 'text-primary'
-                          : 'text-neutral-500'
+                          : 'text-gray-500-500'
                       }`}
                     >
                       {stage.label}
@@ -128,7 +128,7 @@ export function HomeTraceabilityFlowchart() {
               data-aos-delay='300'
               className='w-3/4 shrink-0 grow-0'
             >
-              <div className='relative h-[14rem] w-[24.9rem] overflow-hidden rounded-lg border border-neutral-50 shadow transition-all delay-200 2xl:h-[18rem] 2xl:w-[32rem]'>
+              <div className='relative h-[14rem] w-[24.9rem] overflow-hidden rounded-lg border border-gray-500-50 shadow transition-all delay-200 2xl:h-[18rem] 2xl:w-[32rem]'>
                 <Image
                   alt={STAGE_LIST[selectedStage - 1].title}
                   src={STAGE_LIST[selectedStage - 1].image}

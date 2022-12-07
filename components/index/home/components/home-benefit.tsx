@@ -155,12 +155,12 @@ function EachPart({
       >
         {index}
       </div>
-      <div className='text-2xl font-bold text-neutral-800 lg:text-3xl'>
+      <div className='text-2xl font-bold text-gray-500-800 lg:text-3xl'>
         {title}
       </div>
       <div className='text-lg font-medium lg:text-xl'>{subtitle}</div>
       <div
-        className={`whitespace-pre-wrap text-neutral-400 ${contentClassName}`}
+        className={`whitespace-pre-wrap text-gray-500-400 ${contentClassName}`}
       >
         {content}
       </div>

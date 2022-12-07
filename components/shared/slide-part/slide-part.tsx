@@ -20,7 +20,7 @@ export function SlidePart({
     >
       <div className='main-container'>
         <Title text={title} />
-        <div className='p-12 mt-5 bg-white border rounded-md shadow-md border-neutral-100 lg:mt-8'>
+        <div className='p-12 mt-5 bg-white border rounded-md shadow-md border-gray-500-100 lg:mt-8'>
           <LogoSlider type={type} />
         </div>
       </div>
