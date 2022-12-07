@@ -1,22 +1,9 @@
-import { GetServerSideProps, GetStaticProps } from "next";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-
-import { NoneLayout } from "../layouts/none-layout/none-layout";
+import { HomePage } from "../components/index/home/home-page";
 
 export default function Page() {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.replace("/mrl");
-  });
-
-  return null;
+  return (
+    <>
+      <HomePage />
+    </>
+  );
 }
-
-Page.Layout = NoneLayout;
-
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  // ...
-  return { props: {} };
-};
