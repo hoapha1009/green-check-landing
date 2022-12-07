@@ -55,7 +55,7 @@ function ExpertCard({ expert, delay }) {
           alt='avatar'
           layout='fill'
           objectFit='contain'
-          className='border rounded-full border-neutral-50'
+          className='border rounded-full border-gray-50'
         />
       </div>
 

@@ -64,7 +64,7 @@ function AboutUseCardHorizontal({
     <div
       data-aos='fade-up'
       data-aos-delay={delay}
-      className='flex flex-col gap-2 pb-8 bg-white border rounded-lg shadow-xl border-neutral-100 lg:gap-4 lg:border-neutral-50'
+      className='flex flex-col gap-2 pb-8 bg-white border border-gray-100 rounded-lg shadow-xl lg:gap-4 lg:border-gray-50'
     >
       <div className='mx-auto -mt-[1.75rem] flex h-20 w-20 flex-row items-center justify-center rounded-full border-2 border-primary bg-white p-4 shadow-md lg:-mt-[3.25rem] lg:h-24 lg:w-24'>
         <div className='relative h-14 w-14'>
